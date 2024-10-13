@@ -1,0 +1,29 @@
+@import "reset.css";
+@import "index.css";
+@import "buttons.css";
+@import "allPosts.css";
+@import "notes.css";
+
+* {
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size: 18px;
+    color: #373737;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: row; /* Розташування елементів по горизонталі */
+    gap: 20px; /* Відступ між елементами по горизонталі */
+}
+
+.centre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}

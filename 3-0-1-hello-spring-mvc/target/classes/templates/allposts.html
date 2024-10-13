@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="uk" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Усі пости</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}" href="../static/css/style.css">
+</head>
+<body>
+<h1>Усі пости</h1>
+<div>
+    <ul>
+        <li th:each="post : ${postList}">
+            <a th:href="@{/posts/{id}(id=${post.id})}" th:text="${post.title}">Заголовок поста</a>
+        </li>
+    </ul>
+</div>
+<div class="centre">
+    <a th:href="@{/posts/new}">
+        <button>Додати новий пост</button>
+    </a>
+    <a th:href="@{/posts/main}">Повернутися на головну</a>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="uk" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" th:href="@{/css/style.css}" href="../static/css/style.css">
+  <title>Введіть ID поста</title>
+</head>
+<body>
+<div class="wrapper">
+  <h1>Перегляд поста за ID</h1>
+
+  <!-- Блок для повідомлення про помилку -->
+  <div th:if="${error}" class="error-message" style="color:red;">
+    <p th:text="${error}"></p>
+  </div>
+
+  <div class="items">
+  <form action="#" th:action="@{/posts/getPostById}" method="post">
+    <label for="postId">Введіть ID поста:</label>
+    <input type="number" id="postId" name="id" placeholder="ID поста" required>
+    <button type="submit">Знайти пост</button>
+  </form>
+  </div>
+  <a class="centre" th:href="@{/posts/main}">Повернутися на головну</a>
+</div>
+</body>
+</html>

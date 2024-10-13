@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="uk" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" th:href="@{/css/style.css}" href="../static/css/style.css">
+  <title th:text="${post.title}">Перегляд поста</title>
+</head>
+<body>
+
+<div class="wrapper">
+  <h1 th:text="${post.title}">Назва поста</h1>
+  <p th:text="${post.text}">Текст поста</p>
+  <div th:text="${post.createdOn}">Дата створення</div>
+
+  <div th:if="${post == null}">Пост не знайдено.</div>
+
+  <a class="centre" href="/posts/viewPost">Повернутися назад</a>
+</div>
+</body>
+</html>

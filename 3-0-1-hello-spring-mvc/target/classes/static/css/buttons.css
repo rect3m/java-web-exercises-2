@@ -1,0 +1,16 @@
+button {
+  background-color: #4CAF50; /* Зелений фон для кнопок */
+  color: white; /* Білий текст */
+  padding: 10px 20px; /* Відступи всередині кнопок */
+  border: none; /* Забираємо рамки */
+  border-radius: 5px; /* Згладжуємо кути */
+  cursor: pointer; /* Змінюємо курсор на вказівник при наведенні */
+}
+
+button:hover {
+  background-color: #45a049; /* Зміна кольору при наведенні */
+}
+
+a {
+  text-decoration: none; /* Забираємо підкреслення у посилання */
+}

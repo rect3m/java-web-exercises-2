@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="uk" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" th:href="@{/css/style.css}" href="../static/css/style.css">
+  <title>Блог</title>
+</head>
+<body>
+  <h1>Ласкаво просимо до блогу!</h1>
+  <nav>
+    <ul>
+      <div class="buttons">
+      <a th:href="@{/posts}">
+        <button>Переглянути всі пости</button>
+      </a>
+      <a href="/posts/viewPost">
+        <button>Переглянути пост за ID</button>
+      </a>
+      </div>
+
+    </ul>
+  </nav>
+</body>
+</html>

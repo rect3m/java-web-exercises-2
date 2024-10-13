@@ -1,0 +1,22 @@
+ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+  font-size: 16px;
+}
+
+a:hover {
+ color: darkblue;
+}
